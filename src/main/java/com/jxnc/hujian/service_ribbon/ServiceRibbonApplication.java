@@ -19,7 +19,11 @@ public class ServiceRibbonApplication {
 		SpringApplication.run(ServiceRibbonApplication.class, args);
 	}
 
-
+	
+	/**
+	 *  @LoadBalanced 开启负载均衡后，随机访问服务端
+	 * @return
+	 */
 	@Bean
 	@LoadBalanced
 	RestTemplate restTemplate(){
